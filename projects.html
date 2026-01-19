@@ -1,24 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    /* Sticky footer styles */
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1 0 auto; /* Grow and fill available space */
+    }
+
+    footer {
+      flex-shrink: 0; /* Prevent shrinking */
+    }
+  </style>
+</head>
 
 <body>
-    <h1>Projects</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Year</th>
-            </tr>
+  <!-- Navbar matching the profile page -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">My Profile</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1 class="mb-4">Projects</h1>
+
+    <div class="table-responsive">
+      <table class="table table-striped table-hover align-middle">
+        <thead class="table-primary">
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Year</th>
+          </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Chess</td>
-                <td>Built a chess game with C# and .NET</td>
-                <td>2025</td>
-            </tr>
+          <tr>
+            <td>Chess</td>
+            <td>Built a chess game with C# and .NET</td>
+            <td>2025</td>
+          </tr>
+          <tr>
+            <td>Timetabling app</td>
+            <td>Built a website to assist groups in finding times for activities</td>
+            <td>2025</td>
+          </tr>
+          <tr>
+            <td>Presentation app</td>
+            <td>Worked as part of a team of 6 to build a computer science-oriented presentation app using Java Swing</td>
+            <td>2023</td>
+          </tr>
         </tbody>
-    </table>
+      </table>
+    </div>
+  </main>
+
+  <footer class="bg-light text-center py-3 mt-4">
+    <small>Copyright &#169; <cite>by this cat</cite></small>
+  </footer>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

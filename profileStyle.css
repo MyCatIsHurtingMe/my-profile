@@ -1,0 +1,48 @@
+/* li{
+    background-color: aliceblue;
+    color: brown;
+    font-size: 1.2em;
+} */
+body{
+    background-color: lightblue;
+    color: rgb(4,12,103);
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: darkgoldenrod;
+}
+.box-1{
+    background-color: whitesmoke;
+    border: 5px solid burlywood;
+}
+.box-2{
+    background-color: blueviolet;
+    border: 3px solid rebeccapurple;
+}
+#myform{
+    background-color: beige;
+    padding: 50px;
+}
+#myform input[type="submit"], .button{
+    padding: 8px;
+    border: none;
+    background-color: darkblue;
+    color: whitesmoke;
+}
+.flex-container{
+    display:inline-block;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover{
+    background-color: gray;
+    width:150%;
+}
+
+a:active{
+    background-color:lightgray;
+    width:150%;
+}
